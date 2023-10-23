@@ -35,7 +35,7 @@ const msg = document.getElementById('msg');
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) }) // Form
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML="Message Sent Successfully."
             setTimeout(()=>{
